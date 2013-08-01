@@ -37,9 +37,9 @@ void Timer1_Config(void)//Pitch Timer configuration
     //Timer1 Config
 
     //Time Base configuration
-    TIM_TimeBaseInitStructure.TIM_Prescaler = 3; // Period*Prescaler=24'000'000Hz  //2400 1s
+    TIM_TimeBaseInitStructure.TIM_Prescaler = 9; // 72MHz down to 7.2MHz
     TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_TimeBaseInitStructure.TIM_Period = 1000; //20000(presc=24)=50hz(servo signal)
+    TIM_TimeBaseInitStructure.TIM_Period = 239; // 7.2MHz down to 30kHz freq signal
     TIM_TimeBaseInitStructure.TIM_ClockDivision = 0;
     TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
     TIM_TimeBaseInit(TIM1, &TIM_TimeBaseInitStructure);
@@ -82,9 +82,9 @@ void Timer8_Config(void)//Roll Timer configuration
     //Timer8 Config
 
     //Time Base configuration
-    TIM_TimeBaseInitStructure.TIM_Prescaler = 3; // Period*Prescaler=24'000'000Hz  //2400 1s
+    TIM_TimeBaseInitStructure.TIM_Prescaler = 9; // 72MHz down to 7.2MHz
     TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_TimeBaseInitStructure.TIM_Period = 1000; //20000(presc=24)=50hz(servo signal)
+    TIM_TimeBaseInitStructure.TIM_Period = 239; // 7.2MHz down to 30kHz freq signal
     TIM_TimeBaseInitStructure.TIM_ClockDivision = 0;
     TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
     TIM_TimeBaseInit(TIM8, &TIM_TimeBaseInitStructure);
@@ -139,9 +139,9 @@ void Timer5_Config(void)//Pitch Timer configuration
     TIM_OCInitTypeDef       	TIM_OCInitStructure;
     //Timer5 Config
 
-    TIM_TimeBaseInitStructure.TIM_Prescaler = 3; // Period*Prescaler=24'000'000Hz  //2400 1s
+    TIM_TimeBaseInitStructure.TIM_Prescaler = 9; // 72MHz down to 7.2MHz
     TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_TimeBaseInitStructure.TIM_Period = 1000; //20000(presc=24)=50hz(servo signal)
+    TIM_TimeBaseInitStructure.TIM_Period = 239; // 7.2MHz down to 30kHz freq signal
     TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV4;
     TIM_TimeBaseInit(TIM5, &TIM_TimeBaseInitStructure);
 
@@ -171,9 +171,9 @@ void Timer4_Config(void)//Pitch Timer configuration
     TIM_OCInitTypeDef       	TIM_OCInitStructure;
     //Timer4 Config
 
-    TIM_TimeBaseInitStructure.TIM_Prescaler = 3; // Period*Prescaler=24'000'000Hz  //2400 1s
+    TIM_TimeBaseInitStructure.TIM_Prescaler = 9; // 72MHz down to 7.2MHz
     TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-    TIM_TimeBaseInitStructure.TIM_Period = 1000; //20000(presc=24)=50hz(servo signal)
+    TIM_TimeBaseInitStructure.TIM_Period = 239; // 7.2MHz down to 30kHz freq signal
     TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV4;
     TIM_TimeBaseInit(TIM4, &TIM_TimeBaseInitStructure);
 
