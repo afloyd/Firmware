@@ -6,8 +6,10 @@
 *.a
 
 # system Directories
-/Debug
-/Release
+/Debug/*
+!Debug/Firmware.hex
+/Release/*
+!Release	/Firmware.hex
 /.settings
 
 .cproject
